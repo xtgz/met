@@ -3,7 +3,7 @@ import { spawn, Thread, Worker } from "threads";
 export default class NonceFinder {
     constructor(params = {}) {
         this._workers = [];
-        this._noncesPerRun = 100000;
+        this._noncesPerRun = 1500000;
         this._tryingNonces = [];
         this._initialNonce = 0;
         this._startedSearchAt = null;
